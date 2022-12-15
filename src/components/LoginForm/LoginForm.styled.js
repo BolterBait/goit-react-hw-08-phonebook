@@ -17,7 +17,7 @@ export const Input = styled.input`
   height: 40px;
   display: block;
 
-  color: #fff;
+  color: #000;
   font-weight: 400;
   font-size: 20px;
   padding-left: 15px;

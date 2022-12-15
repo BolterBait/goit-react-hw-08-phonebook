@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { getFilteredContacts } from 'redux/Contacts/slice/filteredSlice';
 import { selectFilter } from 'redux/Contacts/selectors';
-import { Field, FieldName } from './Filter.styled';
+import { Field } from './Filter.styled';
 
 export const Filter = () => {
   const filter = useSelector(selectFilter);
@@ -14,9 +14,12 @@ export const Filter = () => {
   };
 
   return (
-    <FieldName>
-      Find contacts by name
-      <Field type="text" name="filter" onChange={onFilter} value={filter} />
-    </FieldName>
+    <Field
+      type="text"
+      placeholder="Find contacts by name"
+      name="filter"
+      onChange={onFilter}
+      value={filter}
+    />
   );
 };

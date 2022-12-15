@@ -8,3 +8,15 @@ export const Container = styled.div`
   padding: 20px 0;
   margin-left: 40px;`
 
+
+export const Table = styled.table`
+  width: 100%;
+`;
+
+export const TableHead = styled.th`
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 15px;
+  min-width: 20px;
+`;

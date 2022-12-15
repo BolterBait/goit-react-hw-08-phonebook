@@ -6,6 +6,8 @@ import ContactForm from 'components/ContactForm/ContactForm';
 import { ContactsList } from 'components/ContactList/ContactsList';
 import { useAuth } from 'hooks';
 
+import { Wraper } from './Contacts.styled';
+
 export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
@@ -19,12 +21,12 @@ export default function Contacts() {
   }, [dispatch, isLoggedIn]);
 
   return (
-    <>
+    <Wraper>
       <title>Contact Book</title>
 
       <ContactForm />
       <div>{isLoading && 'Your contacts is loading...'}</div>
       <ContactsList />
-    </>
+    </Wraper>
   );
 }
