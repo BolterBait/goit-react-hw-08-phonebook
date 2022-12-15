@@ -9,7 +9,7 @@ import {
 
 import { ContactItem } from '../ContactItem/ContactItem';
 
-import { Container, Title } from './ContactsList.styled';
+import { Container } from './ContactsList.styled';
 
 export const ContactsList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
