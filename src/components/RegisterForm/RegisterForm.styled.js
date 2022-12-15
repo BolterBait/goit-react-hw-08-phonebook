@@ -4,6 +4,9 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(205, 205, 205, 0.9);
+  border-radius: 5px;
+  padding: 10px;
 `;
 
 export const InputWrapp = styled.div`

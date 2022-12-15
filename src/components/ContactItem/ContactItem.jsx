@@ -1,23 +1,29 @@
 import React from 'react';
 import { useDispatch } from 'react-redux/es/hooks/useDispatch';
 import PropTypes from 'prop-types';
+import { TbTrash, TbUser } from 'react-icons/tb';
 
 import { deleteContacts } from 'redux/Contacts/operation';
 
-import { Item, ItemField, DeleteButton } from './ContactItem.styled';
+import { TableCell, BtnTool } from './ContactItem.styled';
 
 export const ContactItem = ({ name, number, id }) => {
   const dispatch = useDispatch();
   const onDelete = () => dispatch(deleteContacts(id));
 
   return (
-    <Item>
-      <ItemField>{name}:</ItemField>
-      <ItemField>{number}</ItemField>
-      <DeleteButton type="button" onClick={onDelete}>
-        delete
-      </DeleteButton>
-    </Item>
+    <tr>
+      <TableCell>
+        <TbUser />
+      </TableCell>
+      <TableCell>{name}</TableCell>
+      <TableCell>{number}</TableCell>
+      <TableCell>
+        <BtnTool type="button" onClick={onDelete}>
+          <TbTrash />
+        </BtnTool>
+      </TableCell>
+    </tr>
   );
 };
 

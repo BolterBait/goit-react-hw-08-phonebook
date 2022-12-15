@@ -1,18 +1,24 @@
 import styled from 'styled-components';
 
 export const Form = styled.form`
+padding: 20px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(205, 205, 205, 0.9);
+  border-radius: 5px;
+    
 `;
 
 export const InputWrapp = styled.div`
 height: 45px;
 margin-bottom: 30px;
+
 `;
 
 export const Input = styled.input`
-  width: 300px;
+
+width: 300px;
   font-family: inherit;
   height: 40px;
   display: block;

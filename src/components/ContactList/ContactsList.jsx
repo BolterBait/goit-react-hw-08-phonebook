@@ -23,7 +23,7 @@ export const ContactsList = () => {
         transition={{ duration: 0.7 }}
       >
         {contacts.length > 0 && <Filter />}
-        <h2>Contacts</h2>
+
         {!filteredContacts.length ? (
           <p>'Provide some contacts'</p>
         ) : (

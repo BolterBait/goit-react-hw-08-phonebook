@@ -6,7 +6,9 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   padding: 20px 0;
-  margin-left: 40px;`
+  margin-left: 40px;
+  background-color: rgba(205, 205, 205, 0.8);
+  border-radius: 5px;`
 
 
 export const Table = styled.table`

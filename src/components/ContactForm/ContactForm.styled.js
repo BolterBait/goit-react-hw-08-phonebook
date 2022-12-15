@@ -11,6 +11,7 @@ display: flex;
   margin-bottom: 20px;
   border-radius: 10px;
   width: 350px;
+  background-color: rgba(205, 205, 205, 0.9);  
   `
 
 export const Field = styled.input`
